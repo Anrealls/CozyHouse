@@ -1,0 +1,80 @@
+.footer-container {
+  padding-top: 50px;
+  background: linear-gradient(to right, #4d3f36, #1a191c);
+}
+
+.footer_left-content,
+.footer_center-content {
+  margin: 30px 0 20px 0;
+}
+
+.footer_left-title,
+.footer_center-title {
+  margin-bottom: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+.footer_left-item,
+.footer_center-item {
+  padding-left: 40px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #f1cdb3;
+}
+
+.footer_left-item {
+  position: relative;
+  &--mail::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 40px;
+    height: 30px;
+    background: url("../img/footer/envelope.svg") no-repeat;
+    background-size: contain;
+  }
+  &--mobile::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 40px;
+    height: 32px;
+    background: url("../img/footer/telephone.svg") no-repeat;
+    background-size: contain;
+  }
+}
+.footer_left-item--mobile {
+  letter-spacing: 1px;
+}
+.footer_center-item {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 30px;
+    height: 45px;
+    background: url("../img/footer/pin.svg") no-repeat;
+    background-size: contain;
+  }
+  &--second::after {
+    top: -3px;
+  }
+}
+
+.footer_center-item {
+
+  span {
+    display: block;
+  }
+}
+
+.footer_right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}

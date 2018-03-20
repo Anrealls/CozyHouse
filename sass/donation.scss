@@ -1,0 +1,54 @@
+.donation {
+  display: flex;
+  justify-content: center;
+  padding: 65px 15px;
+  background-color: #f6f6f6;
+}
+.donation_title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+.donation_card-container {
+  p {
+    font-size: 15px;
+  }
+}
+.donation_card {
+  position: relative;
+  max-width: 320px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: #292929;
+  background-color: #f1cdb3;
+  text-align: right;
+  border-radius: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    width: 30px;
+    height: 24px;
+    background: url("../img/donate/credit-card (1).svg") no-repeat;
+    background-size: contain;
+  }
+}
+.donation_info {
+  max-width: 400px;
+}
+.donation_info-text {
+  margin: 0;
+  color: #b2b2b2;
+  font-size: 12px;
+  font-style: italic;
+}
+.donation_img-container {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.donation_img {
+  width: 505px;
+  height: 261px;
+}

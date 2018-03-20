@@ -1,0 +1,103 @@
+.header-bg {
+	width: 100%;
+	height: 920px;
+	padding-top: 50px;
+	background: linear-gradient(to bottom right, #4d3f36, #1a191c);
+	overflow: hidden;
+}
+.header_img {
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -820px;
+		right: -150px;
+		width: 768px;
+		height: 720px;
+		background: url("../img/Dog.png") no-repeat;
+	}
+}
+.header-logo {
+	color: #cbac96;
+	font-size: 32px;
+	span {
+		font-size: 13px;
+		display: block;
+		color: #fff;
+	}
+}
+.header-nav_list {
+	display: flex;
+	flex-direction: row;
+}
+.header-nav_item {
+	margin-top: 30px;
+	margin-right: 25px;
+	a {
+		position: relative;
+		font-size: 15px;
+		color: #cdcdcd;
+		&:hover {
+			&::after {
+				transform: scale(1);
+				transition: all 0.3s ease;
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -5px;
+			right: 0;
+			width: 100%;
+			height: 2px;
+			background: #f1cdb3;
+			transform: scale(0);
+			transition: all 0.3s ease;
+		}
+	}
+}
+.header-info {
+	margin-top: 240px;
+	p {
+		margin: 0;
+		margin-bottom: 30px;
+		color: #cdcdcd;
+		font-size: 15px;
+		line-height: 24px;
+	}
+}
+.header-info_title {
+	margin: 0;
+	margin-bottom: 20px;
+	max-width: 400px;
+	font-size: 44px;
+	line-height: 57px;
+	font-weight: 400;
+	word-spacing: 6px;
+	color: #fff;
+}
+.header-info_btn {
+	padding: 15px 40px;
+	background: #f1cdb3;
+	font-size: 17px;
+	font-weight: 400;
+	color: #292929;
+	border-radius: 25px;
+	&:hover {
+		background-color: #fddcc4;
+	}
+}
+.hamburger {
+	display: none;
+	position: absolute;
+	top: -45px;
+	right: 0;
+	padding: 0;
+	outline: none;
+	.hamburger-inner,
+	.hamburger-inner::after,
+	.hamburger-inner::before {
+		background-color: #cdcdcd;
+	}
+}
+
